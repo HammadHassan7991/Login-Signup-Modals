@@ -1,0 +1,95 @@
+/* .error {
+    padding: 10px;
+    color: crimson;
+
+}
+
+.success {
+
+    border: 1px dotted limegreen;
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(208, 86, 20);
+}
+/*                                pop ups                       */
+.btn-click{
+position: absolute;
+top: 50%;
+left: 42%;
+text-align: center;}
+.btn-click button {
+   background-color: crimson;
+    color: white;
+    padding: 10px 25px;
+}
+
+.popup-wrapper {
+    background: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* display: none; */
+}
+
+.popup-login {
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+    /* width: 100%; */
+    width: 300px;
+    height: 430px;
+    /* margin: 7% auto; */
+    padding: 20px;
+    background: white;
+    position: relative;
+    display: none;
+    animation: dropY 1s ease forwards;
+}
+.popup-signup {
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+    /* width: 100%; */
+    width: 300px;
+    height: 430px;
+    /* margin: 7% auto; */
+    padding: 20px;
+    background: white;
+    position: relative;
+    display: none;
+    animation: dropX 1s ease forwards;
+}
+@keyframes dropY{
+    0%{opacity: 0;}
+    70%{transform: translateY(120px);}
+    100%{transform: translateY(70px);opacity: 1;}
+}
+@keyframes dropX{
+    0%{opacity: 0;}
+    70%{transform: translateX(120px);}
+    100%{transform: translateX(50px);opacity: 1;}
+}
+
+.popup-close {
+    text-align: end;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+
+
+}
+
+.popup a {
+    text-decoration: none;
+    background: crimson;
+    padding: 6px 10px;
+    color: white;
+}
